@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use LDAP\Result;
 
 class ProductController extends Controller
 {
@@ -19,5 +20,13 @@ class ProductController extends Controller
     }
     function list(){
         return Product::all();
+    }
+    function delete($id){
+        $result=Product::where('id',$id)->delete();
+        if($result){
+            return ['result'=>"Product has been deleted"];
+        }
+        return ['result'=>'Operation Failed'];
+
     }
 }
