@@ -1468,3 +1468,193 @@ Stack trace:
 #45 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('E:\\\\laravel\\\\ecom...')
 #46 {main}
 "} 
+[2024-02-28 14:40:29] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(957): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(942): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(957): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(942): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-02-28 14:44:40] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file at E:\\laravel\\ecommerce-backend\\routes\\api.php:29)
+[stacktrace]
+#0 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(511): Illuminate\\Routing\\RouteFileRegistrar->register('E:\\\\laravel\\\\ecom...')
+#1 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(465): Illuminate\\Routing\\Router->loadRoutes('E:\\\\laravel\\\\ecom...')
+#2 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(194): Illuminate\\Routing\\Router->group(Array, 'E:\\\\laravel\\\\ecom...')
+#3 E:\\laravel\\ecommerce-backend\\app\\Providers\\RouteServiceProvider.php(34): Illuminate\\Routing\\RouteRegistrar->group('E:\\\\laravel\\\\ecom...')
+#4 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#5 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#10 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#17 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1033): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1011): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 24)
+#20 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1010): array_walk(Array, Object(Closure))
+#21 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(263): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2024-02-28 14:45:03] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file at E:\\laravel\\ecommerce-backend\\routes\\api.php:29)
+[stacktrace]
+#0 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(511): Illuminate\\Routing\\RouteFileRegistrar->register('E:\\\\laravel\\\\ecom...')
+#1 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(465): Illuminate\\Routing\\Router->loadRoutes('E:\\\\laravel\\\\ecom...')
+#2 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(194): Illuminate\\Routing\\Router->group(Array, 'E:\\\\laravel\\\\ecom...')
+#3 E:\\laravel\\ecommerce-backend\\app\\Providers\\RouteServiceProvider.php(34): Illuminate\\Routing\\RouteRegistrar->group('E:\\\\laravel\\\\ecom...')
+#4 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#5 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#10 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#17 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1033): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1011): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 24)
+#20 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1010): array_walk(Array, Object(Closure))
+#21 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(263): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2024-02-28 14:50:29] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(957): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(942): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(957): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(942): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-02-28 15:00:29] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(957): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(942): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(957): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(942): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-02-28 15:10:30] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(957): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(942): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(957): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(942): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-02-28 15:20:30] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(957): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(942): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 E:\laravel\ecommerce-backend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(957): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(942): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at E:\\laravel\\ecommerce-backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
